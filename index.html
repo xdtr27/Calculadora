@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+<body>
+  <section>
+    <header>
+      <h1 onclick="uau()">Calculadora</h1>
+      <div>
+        <p id="visor"></p>
+      </div>
+    </header>
+    <main>
+     
+      <table class="container">
+        <thead>
+          <tr>
+            <td onclick='click_button("+")'>+</td>
+            <td onclick='click_button("-")'>-</td>
+            <td onclick='click_button("*")'>x</td>
+            <td onclick='click_button("/")'>&#247</td>
+          
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td onclick="click_button('7')">7</td>
+            <td onclick="click_button('8')">8</td>
+            <td onclick="click_button('9')">9</td>
+            
+            <td rowspan="3" id="equal" onclick="calcular()">=</td>
+          </tr>
+          <tr>
+            <td onclick="click_button('4')">4</td>
+            <td onclick="click_button('5')">5</td>
+            <td onclick="click_button('6')">6</td>
+          </tr>
+          <tr>
+            <td onclick="click_button('1')">1</td>
+            <td onclick="click_button('2')">2</td>
+            <td onclick="click_button('3')">3</td>
+          </tr>
+          <tr>
+            <td onclick="click_button('0')">0</td>
+            <td onclick="click_button('.')">.</td>
+            <td onclick="limpar()">C</td>
+            <td onclick="deletar()">&#60</td>
+          </tr>
+        </tbody>
+      </table>
+
+   
+    </main>
+  </section>
+  
+  <script src="./main.js"></script>
+</body>
+</html>
