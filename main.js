@@ -20,3 +20,15 @@ function calcular() {
 function uau(event) {
   console.log(event)
 }
+
+/* ======= utilizando as teclas do teclado para calcular ======= */
+
+document.addEventListener('keydown', (event) => {
+  if (event.key === "Enter") {
+    calcular()
+  } else if (event.key === "Backspace") {
+    deletar()
+  } else {
+    visor.innerHTML += event.key
+  }
+})
